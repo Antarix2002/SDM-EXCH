@@ -259,6 +259,40 @@
             src: url(https://img1.wsimg.com/gfonts/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
+
+        /* default blue text (question + answer + list) */
+.accordion-question,
+.accordion-answer,
+.accordion-answer * {
+  color: rgb(107,149,189) !important;
+}
+
+/* answer hidden by default */
+.accordion-answer {
+  display: none !important;
+}
+
+/* open state */
+.accordion-answer.open {
+  display: block !important;
+}
+
+/* hover pe bhi blue (safety) */
+.accordion-question:hover,
+.accordion-question:hover + .accordion-answer,
+.accordion-answer:hover,
+.accordion-answer:hover * {
+  color: rgb(107,149,189) !important;
+}
+/* heading bhi blue */
+
+ h2, h3, h4, h5, h6,
+[data-ux*="Heading"],
+[data-ux*="ContentHeading"] {
+  color: rgb(107,149,189) !important;
+}
+
+
     </style>
     <style>
         .x {
@@ -339,7 +373,7 @@
         }
 
         .x-el-mark {
-            background: #ff0;
+            background: rgb(107, 149, 189);
             color: #000
         }
 
@@ -3305,16 +3339,54 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
                             <section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-h c1-j c1-k c1-b c1-c c1-n c1-o c1-d c1-e c1-f c1-g">
                                 <div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-37 c1-38 c1-4h c1-4i c1-2x c1-b c1-c c1-4j c1-d c1-4k c1-e c1-4q c1-f c1-4r c1-g">
                                     <h2 role="heading" aria-level="2" data-ux="SectionHeading" data-aid="ABOUT_SECTION_TITLE_RENDERED" data-typography="HeadingEpsilon" data-font-scaled="true" class="x-el x-el-h2 c1-2g c1-2h c1-2q c1-2f c1-7m c1-23 c1-21 c1-20 c1-7n c1-50 c1-2j c1-9x c1-64 c1-5p c1-7p c1-65 c1-66 c1-67 c1-68"><span data-ux="Element" class="x-el x-el-span c1-7q c1-6r c1-7r c1-7s c1-7t">Why Choose SDM EXCH BOOK for Your Betting Needs?</span>
-                                        <hr aria-hidden="true" role="separator" data-ux="SectionHeadingHR" class="x-el x-el-hr c1-2g c1-2h c1-9y c1-7v c1-7w c1-70 c1-22 c1-4 c1-2j c1-64 c1-65 c1-66 c1-67 c1-68"
-                                        />
+                                        <hr
+  aria-hidden="true"
+  role="separator"
+  data-ux="SectionHeadingHR"
+  style="background-color: rgb(107, 149, 189); border-color: rgb(107, 149, 189);"
+/>
+
                                     </h2>
                                     <div data-ux="ContentCards" class="x-el x-el-div x-el c1-1 c1-2 c1-2d c1-w c1-a9 c1-23 c1-21 c1-b c1-c c1-7x c1-7y c1-aa c1-ab c1-d c1-e c1-f c1-g c1-1 c1-2 c1-t c1-7z c1-80 c1-6w c1-20 c1-81 c1-82 c1-83 c1-b c1-c c1-84 c1-85 c1-86 c1-87 c1-d c1-e c1-f c1-g">
                                         <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-7z c1-s c1-88 c1-89 c1-2x c1-34 c1-8a c1-35 c1-8b c1-t c1-ac c1-a9 c1-b c1-c c1-8c c1-8d c1-56 c1-ad c1-57 c1-51 c1-d c1-8h c1-8i c1-e c1-f c1-g">
-                                            <div data-ux="ContentCard" index="0" class="x-el x-el-div x-el c1-1 c1-2 c1-r c1-t c1-u c1-4c c1-50 c1-w c1-4 c1-8j c1-8k c1-59 c1-a2 c1-ae c1-af c1-ag c1-ah c1-ai c1-5m c1-7v c1-aj c1-s c1-b c1-c c1-7x c1-7y c1-ak c1-al c1-d c1-am c1-an c1-ao c1-ap c1-aq c1-e c1-f c1-g c1-1 c1-2 c1-ar c1-b c1-c c1-d c1-e c1-f c1-g">
+                                            <div data-ux="ContentCard"  index="0" class="x-el x-el-div x-el c1-1 c1-2 c1-r c1-t c1-u c1-4c c1-50 c1-w c1-4 c1-8j c1-8k c1-59 c1-a2 c1-ae c1-af c1-ag c1-ah c1-ai c1-5m c1-7v c1-aj c1-s c1-b c1-c c1-7x c1-7y c1-ak c1-al c1-d c1-am c1-an c1-ao c1-ap c1-aq c1-e c1-f c1-g c1-1 c1-2 c1-ar c1-b c1-c c1-d c1-e c1-f c1-g">
                                                 <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-r c1-8l c1-b c1-c c1-3o c1-d c1-q c1-e c1-f c1-g">
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED0" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d">Customizable Training</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d">Customizable Training</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d">Customizable Training</h3>
+<div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-r c1-8l c1-b c1-c c1-3o c1-d c1-q c1-e c1-f c1-g">
+                                       <h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-aid="ABOUT_HEADLINE_RENDERED2"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Convenient Location
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Customizable Training
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Fun for All Ages
+</h3>
+
+                                                </div>
                                                 </div>
                                                 <div data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED0" data-typography="BodyBeta" class="x-el c1-1 c1-2 c1-2q c1-2f c1-8m c1-20 c1-22 c1-6f c1-9p c1-11 c1-b c1-a8 c1-6k c1-6l c1-6m c1-6n c1-6o c1-6p x-rt">
                                                     <p style="margin:0"><span>At SDM Exch book, we understand that every player has unique strengths and weaknesses. That's why we offer customizable training plans to help you focus on the areas where you need the most improvement.</span></p>
@@ -3326,9 +3398,42 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
                                         <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-7z c1-s c1-88 c1-89 c1-2x c1-34 c1-8a c1-35 c1-8b c1-t c1-ac c1-a9 c1-b c1-c c1-8c c1-8d c1-56 c1-ad c1-57 c1-51 c1-d c1-8h c1-8i c1-e c1-f c1-g">
                                             <div data-ux="ContentCard" index="1" class="x-el x-el-div x-el c1-1 c1-2 c1-r c1-t c1-u c1-4c c1-50 c1-w c1-4 c1-8j c1-8k c1-59 c1-a2 c1-ae c1-af c1-ag c1-ah c1-ai c1-5m c1-7v c1-aj c1-s c1-b c1-c c1-7x c1-7y c1-ak c1-al c1-d c1-am c1-an c1-ao c1-ap c1-aq c1-e c1-f c1-g c1-1 c1-2 c1-ar c1-b c1-c c1-d c1-e c1-f c1-g">
                                                 <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-r c1-8l c1-b c1-c c1-3o c1-d c1-q c1-e c1-f c1-g">
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED1" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d">Convenient Location</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d">Customizable Training</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d">Customizable Training</h3>
+<div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-r c1-8l c1-b c1-c c1-3o c1-d c1-q c1-e c1-f c1-g">
+                                       <h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-aid="ABOUT_HEADLINE_RENDERED2"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Convenient Location
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Customizable Training
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Fun for All Ages
+</h3>
+
+                                                </div>
                                                 </div>
                                                 <div data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED1" data-typography="BodyBeta" class="x-el c1-1 c1-2 c1-2q c1-2f c1-8m c1-20 c1-22 c1-6f c1-9p c1-11 c1-b c1-a8 c1-6k c1-6l c1-6m c1-6n c1-6o c1-6p x-rt">
                                                     <p style="margin:0"><span>Our facility is conveniently located in the heart of the city, with easy access to public transportation and ample parking. Whether you're coming from work or school, we're just a short trip away.</span></p>
@@ -3340,12 +3445,43 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
                                         <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-7z c1-s c1-88 c1-89 c1-2x c1-34 c1-8a c1-35 c1-8b c1-t c1-ac c1-a9 c1-b c1-c c1-8c c1-8d c1-56 c1-ad c1-57 c1-51 c1-d c1-8h c1-8i c1-e c1-f c1-g">
                                             <div data-ux="ContentCard" index="2" class="x-el x-el-div x-el c1-1 c1-2 c1-r c1-t c1-u c1-4c c1-50 c1-w c1-4 c1-8j c1-8k c1-59 c1-a2 c1-ae c1-af c1-ag c1-ah c1-ai c1-5m c1-7v c1-as c1-s c1-b c1-c c1-7x c1-7y c1-ak c1-al c1-d c1-at c1-an c1-au c1-ap c1-av c1-e c1-f c1-g c1-1 c1-2 c1-ar c1-b c1-c c1-d c1-e c1-f c1-g">
                                                 <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-r c1-8l c1-b c1-c c1-3o c1-d c1-q c1-e c1-f c1-g">
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED2" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d">Fun for All Ages</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d">Customizable Training</h3>
-                                                    <h3 role="heading" aria-level="3" data-ux="ContentOverlayCardHeading" data-typography="HeadingGamma" class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d">Fun for All Ages</h3>
+                                       <h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-aid="ABOUT_HEADLINE_RENDERED2"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-22 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8o c1-6a c1-8p c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Convenient Location
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-6a c1-8r c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Customizable Training
+</h3>
+
+<h3
+  role="heading"
+  aria-level="3"
+  data-ux="ContentOverlayCardHeading"
+  data-typography="HeadingGamma"
+  class="x-el x-el-h3 c1-1 c1-2 c1-2q c1-2f c1-8m c1-23 c1-21 c1-20 c1-8q c1-60 c1-61 c1-5h c1-8n c1-b c1-2z c1-69 c1-6l c1-8s c1-6a c1-6b c1-6c c1-6d"
+  style="color: rgb(107,149,189);"
+>
+  Fun for All Ages
+</h3>
+
                                                 </div>
                                                 <div data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED2" data-typography="BodyBeta" class="x-el c1-1 c1-2 c1-2q c1-2f c1-8m c1-20 c1-22 c1-6f c1-9p c1-11 c1-b c1-a8 c1-6k c1-6l c1-6m c1-6n c1-6o c1-6p x-rt">
-                                                    <p style="margin:0"><span>Whether you're a little league player, a high school athlete, or a seasoned pro, SDM Exch book has something for everyone. Our facility is designed to be fun and engaging for players of all ages and skill levels.</span></p>
+                                                    <p style="margin:0 background: rgb(107,149,189);"><span>Whether you're a little league player, a high school athlete, or a seasoned pro, SDM Exch book has something for everyone. Our facility is designed to be fun and engaging for players of all ages and skill levels.</span></p>
                                                 </div>
                                                 <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"><a rel="noopener" data-ux-btn="secondary" customBorderWidth="small" data-ux="ContentOverlayCardButton" shape="ROUND" decoration="NONE" shadow="NONE" data-aid="ABOUT_CTA_BTN_RENDERED2" href="https://wa.link/qki7am"
                                                         target="_blank" data-tccl="ux2.ABOUT.about6.Content.OverlayCard.Button.Secondary.72632.click,click" data-typography="ButtonAlpha" class="x-el x-el-a c1-74 c1-2 c1-75 c1-76 c1-77 c1-78 c1-a9 c1-2s c1-79 c1-7a c1-1y c1-2e c1-2d c1-2p c1-2f c1-2q c1-r c1-2x c1-4 c1-7b c1-7c c1-24 c1-26 c1-7d c1-7e c1-7f c1-7g c1-b c1-5p c1-11 c1-c c1-7h c1-7i c1-9w c1-7k c1-7l c1-d c1-e c1-f c1-g">get id now</a></div>
@@ -3378,8 +3514,14 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
     transition:transform 0.3s, box-shadow 0.3s;
 "
-onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
-onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.15)'"
+ onmouseover="
+    this.style.boxShadow='0 14px 32px rgba(107,149,189,0.35)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='rgb(107,149,189)');
+  "
+  onmouseout="
+    this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='');
+  "
 >
     <img src="./ads1.png" style="
         width:100%;
@@ -3399,8 +3541,14 @@ onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
     transition:transform 0.3s, box-shadow 0.3s;
 "
-onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
-onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.15)'"
+ onmouseover="
+    this.style.boxShadow='0 14px 32px rgba(107,149,189,0.35)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='rgb(107,149,189)');
+  "
+  onmouseout="
+    this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='');
+  "
 >
     <img src="./ads 2.png" style="
         width:100%;
@@ -3435,8 +3583,14 @@ onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
     transition:transform 0.3s, box-shadow 0.3s;
 "
-onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
-onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.15)'"
+ onmouseover="
+    this.style.boxShadow='0 14px 32px rgba(107,149,189,0.35)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='rgb(107,149,189)');
+  "
+  onmouseout="
+    this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='');
+  "
 >
     <img src="./ads 3.png" style="
         width:100%;
@@ -3455,8 +3609,14 @@ onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
     transition:transform 0.3s, box-shadow 0.3s;
 "
-onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
-onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.15)'"
+ onmouseover="
+    this.style.boxShadow='0 14px 32px rgba(107,149,189,0.35)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='rgb(107,149,189)');
+  "
+  onmouseout="
+    this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';
+    this.querySelectorAll('span,p').forEach(el=>el.style.color='');
+  "
 >
     <img src="./ads 4.png" style="
         width:100%;
@@ -3514,11 +3674,34 @@ onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(
                                             />
                                         </h2>
                                         <div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-t c1-7z c1-80 c1-6w c1-20 c1-81 c1-22 c1-83 c1-b c1-c c1-84 c1-85 c1-a0 c1-87 c1-d c1-e c1-f c1-g">
-                                            <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-7z c1-s c1-88 c1-bj c1-2x c1-34 c1-8a c1-35 c1-8b c1-b c1-c c1-56 c1-8e c1-57 c1-8g c1-d c1-e c1-f c1-g">
-                                                <div data-ux="Text" data-aid="FAQ_SECTION_DESCRIPTION_RENDERED" data-typography="BodyAlpha" class="x-el c1-1 c1-2 c1-2q c1-2f c1-6e c1-20 c1-22 c1-6f c1-24 c1-b c1-a8 c1-c c1-6l c1-d c1-bk c1-e c1-f c1-g x-rt">
-                                                    <p style="margin:0"><span>Please reach us at <a class="x-el x-el-a c1-2n c1-2o c1-6v c1-2q c1-2f c1-2r c1-2s c1-7q c1-b c1-2z c1-30 c1-31 c1-32" href="https://wa.link/qki7am" target="_blank">https://wa.link/qki7am</a> if you cannot find an answer to your question.</span></p>
-                                                </div>
-                                            </div>
+                                          <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-7z c1-s c1-88 c1-bj c1-2x c1-34 c1-8a c1-35 c1-8b c1-b c1-c c1-56 c1-8e c1-57 c1-8g c1-d c1-e c1-f c1-g">
+  <div
+    data-ux="Text"
+    data-aid="FAQ_SECTION_DESCRIPTION_RENDERED"
+    data-typography="BodyAlpha"
+    class="x-el c1-1 c1-2 c1-2q c1-2f c1-6e c1-20 c1-22 c1-6f c1-24 c1-b c1-a8 c1-c c1-6l c1-d c1-bk c1-e c1-f c1-g x-rt"
+  >
+    <p style="margin:0;">
+      <span>
+        Please reach us at
+        <a
+          href="https://wa.link/qki7am"
+          target="_blank"
+          class="x-el x-el-a c1-2n c1-2o c1-6v c1-2q c1-2f c1-2r c1-2s c1-7q c1-b c1-2z c1-30 c1-31 c1-32"
+          style="
+            color: rgb(107,149,189);
+            text-decoration: underline;
+            font-weight: 600;
+          "
+        >
+          https://wa.link/qki7am
+        </a>
+        if you cannot find an answer to your question.
+      </span>
+    </p>
+  </div>
+</div>
+
                                         </div>
                                     </div>
                                     <div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-t c1-7z c1-80 c1-6w c1-20 c1-81 c1-22 c1-83 c1-b c1-c c1-84 c1-85 c1-a0 c1-87 c1-d c1-e c1-f c1-g">
@@ -3701,6 +3884,31 @@ onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(
             }
         });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".accordion-question").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const answer = btn.parentElement.querySelector(".accordion-answer");
+
+      // close all others
+      document.querySelectorAll(".accordion-answer").forEach(a => {
+        if (a !== answer) a.classList.remove("open");
+      });
+
+      // toggle current
+      answer.classList.toggle("open");
+
+      // aria fix
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", !expanded);
+    }, true);
+  });
+});
+</script>
+
     
 </body>
 
